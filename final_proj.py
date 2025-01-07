@@ -1,14 +1,14 @@
+name = input("Please enter your name: ")
 isContinue = True
-name: input("Hi, Please enter your name: ")
 
 def activity1():
-	print("Hello World")
-	
+	print("Hello World!")
+
 def activity2():
-    num1 = eval(input("Please enter a number: "))
-    num2 = eval(input("Please enter another number: "))
-    print(f"{num1} Floor divided to {num2} = {num1 // num2}")
-    
+			num1 = eval(input("Please enter a number: "))
+			num2 = eval(input("Please enter another number: "))
+			print(f"{num1} Floor divided to {num2} = {num1 // num2}")
+			
 def activity3():
 	name = input("Please input your name:")
 	gender = input("Please input your gender:")
@@ -341,8 +341,7 @@ def activity20():
 		                      print(end=" ")
 		                  print()
 		          continue
-	
-
+		          
 def code_challenge1():
 	pass
 	
@@ -380,7 +379,7 @@ def code_challenge4():
 	print("The remainder of",number1,"and", number2,"is = ",remainder)
 	print("")
 	print("The floor division of",number1,"and",number2,"is = ",floor_division)
-
+	
 def code_challenge5():
 	print("FAHRENHEIT TO CELCIUS CONVERTER PROGRAM") 
 	print("=============") 
@@ -481,15 +480,15 @@ def code_challenge11():
 		for a in range(6, x, -1): 
 			print("*", end= " ")
 		print()
-	
-for x in range (1, 7): 
-	for z in range(1, x+2): 
-		print(" ", end= " ")
-	for y in range(6, x, -1): 
-		print("*", end= " ") 
-	for a in range(5, x, -1): 
-		print("*", end= " ") 
-	print()
+		
+	for x in range (1, 7):
+		for z in range(1, x+2):
+			print(" ", end= " ")
+		for y in range(6, x, -1):
+			print("*", end= " ")
+		for a in range(5, x, -1):
+			print("*", end= " ")
+		print()
 		
 def code_challenge12():
 	for x in range (6, 0, -1):
@@ -516,16 +515,16 @@ def code_challenge13():
 			print (z, end=" ") 
 		for a in range(1, x+1): 
 			print(a, end=" ") 
-		print () 
-	
-for x in range(5, 0, -1): 
-	for y in range(6, x, -1): 
-		print(" ", end=" ") 
-	for z in range(x, 1, -1): 
-		print(z, end=" ") 
-	for a in range(1, x+1): 
-		print(a, end=" ") 
-	print()
+		print ()
+		
+	for x in range(5, 0, -1):
+		for y in range(6, x, -1):
+			print(" ", end=" ")
+		for z in range(x, 1, -1):
+			print(z, end=" ")
+		for a in range(1, x+1):
+			print(a, end=" ")
+		print()
 		
 def code_challenge14():
 	con = True
@@ -688,233 +687,255 @@ def open_account():
             
         print("\nThank you! Have a nice day!")
 
+
 while isContinue:
-	print("\nSelect from the following code")
-	print("Activities: ")
-	print("1-Hello World ")
-	print("2")
-	print("3")
-	print("4")
-	print("5")
-	print("6")
-	print("7")
-	print("8")
-	print("9")
-	print("10")
-	print("11")
-	print("12")
-	print("13")
-	print("14")
-	print("15")
-	print("16")
-	print("17")
-	print("18")
-	print("19")
-	print("20")
-	print("\nCode Challenges\nUse code_cgallenge for selecting (ex: code_challenge1) ")
-	print("code_challenge")
-	print("code_cgallenge2")
-	print("code_challenge3")
-	print("code_challenge4")
-	print("cpde_challenge5")
-	print("code_challenge6")
-	print("code_challenge7")
-	print("code_challenge8")
-	print("code_challenge9")
-	print("code_challenge10")
-	print("code_challenge11")
-	print("code_challenge12")
-	print("code_challenge13")
-	print("code_challenge14")
-	print("code_challenge15")
-	print("code_challenge16")
+	ask = input("Do you want to start the program (yes/no) ")
+	if ask.lower() == "yes":
+			print("Select from the following code. ")
+			print("1.Activities")
+			print("2.Code Challenges")
+			print("3. Exit")
+			print("\n===============================\n")
+			choice = input("Enter your choice (1-3): ")
+			
+			if choice == "1":
+					print("1. Activity1")
+					print("2. Activity2")
+					print("3. Activity3")
+					print("4. Activity4")
+					print("5. Activity5")
+					print("6. Activity6")
+					print("7. Activity7")
+					print("8. Activity8")
+					print("9. Activity9")
+					print("10. Activity10")
+					print("11. Activity11")
+					print("12. Activity12")
+					print("13. Activity13")
+					print("14. Activity14")
+					print("15. Activity15")
+					print("16. Activity16")
+					print("17. Activity17")
+					print("18. Activity18")
+					print("19. Activity19")
+					print("20. Activity20")
+					print("21. Return")
+					
+					
+					print("\n===============================\n")
+					choice = input("enter your choice (1-6): ")
+					if choice == "1":
+						print("Activity1\n ")
+						activity1()
+						continue
+						
+					if choice == "2":
+						print("Activity2\n")
+						activity2()
+						continue
+						
+					if choice =="3":
+						print("Activity3\n")
+						activity3()
+						continue
+						
+					if choice == "4":
+						print("Activity 4\n")
+						activity4()
+						continue
+						
+					if choice == "5":
+						print("Activity5\n")
+						activity5()
+						continue
+						
+					if choice == "6":
+						print("Activity6\n")
+						activity6()
+						continue
+						
+					if choice == "7":
+						print("Activity7\n")
+						activity7()
+						continue
+						
+					if choice == "8":
+						print("Activity8\n")
+						activity8()
+						continue
+						
+					if choice == "9":
+						print("Activity9\n")
+						activity9()
+						continue
+						
+					if choice == "10":
+						print("Activity10\n")
+						activity10()
+						continue
+						
+					if choice == "11":
+						print("Activity11\n ")
+						activity11()
+						continue
+						
+					if choice == "12":
+						print("Activity12\n")
+						activity12()
+						continue
+						
+					if choice =="13":
+						print("Activity13\n")
+						activity13()
+						continue
+						
+					if choice == "14":
+						print("Activity 14\n")
+						activity14()
+						continue
+						
+					if choice == "15":
+						print("Activity15\n")
+						activity15()
+						continue
+						
+					if choice == "16":
+						print("Activity16\n")
+						activity16()
+						continue
+						
+					if choice == "17":
+						print("Activity17\n")
+						activity17()
+						continue
+						
+					if choice == "18":
+						print("Activity18\n")
+						activity18()
+						continue
+						
+					if choice == "19":
+						print("Activity19\n")
+						activity19()
+						continue
+						
+					if choice == "20":
+						print("Activity20\n")
+						activity20()
+						continue
+						
+					if choice == "21":
+						print("Return ")
+						continue
+						
+					
+			if choice == "2":
+					print("1. Code Challenge1")
+					print("2. Code Challenge2")
+					print("3. Code Challenge3")
+					print("4. Code Challenge4")
+					print("5. Code Challenge5")
+					print("6. Code Challenge6")
+					print("7. Code Challenge7")
+					print("8. Code Challenge8")
+					print("9. Code Challenge9")
+					print("10. Code Challenge10")
+					print("11. Code Challenge11")
+					print("12. Code Challenge12")
+					print("13. Code Challenge13")
+					print("14. Code Challenge14")
+					print("15. Code Challenge15")
+					print("16. Code Challenge16")
+					print("17. Return")
+					
+					print("\n===============================\n")
+					choice = input("enter your choice (1-6): ")
+					
+					if choice == "1":
+						print("Code Challenge1\n ")
+						code_challenge1()
+						continue
+						
+					if choice == "2":
+						print("Code Challenge2\n")
+						code_challenge2()
+						continue
+						
+					if choice =="3":
+						print("Code Challenge3\n")
+						code_challenge3()
+						continue
+						
+					if choice == "4":
+						print("Code Challenge4\n")
+						code_challenge4()
+						continue
+						
+					if choice == "5":
+						print("Code Challenge5\n")
+						code_challenge5()
+						continue
+						
+					if choice == "6":
+						print("Code Challenge6\n ")
+						code_challenge6()
+						continue
+						
+					if choice == "7":
+						print("Code Challenge7\n")
+						code_challenge7()
+						continue
+						
+					if choice =="8":
+						print("Code Challenge8\n")
+						code_challenge8()
+						continue
+						
+					if choice == "9":
+						print("Code Challenge9\n")
+						code_challenge9()
+						continue
+						
+					if choice == "10":
+						print("Code Challengeq0\n")
+						code_challenge10()
+						continue
+						
+					if choice == "11":
+						print("Code Challenge11\n ")
+						code_challenge11()
+						continue
+						
+					if choice == "12":
+						print("Code Challenge12\n")
+						code_challenge12()
+						continue
+						
+					if choice =="13":
+						print("Code Challenge13\n")
+						code_challenge13()
+						continue
+						
+					if choice == "14":
+						print("Code Challenge14\n")
+						code_challenge14()
+						continue
+						
+					if choice == "15":
+						print("Code Challenge15\n")
+						code_challenge15()
+						continue
+						
+					if choice == "16":
+						print("Code Challenge16\n")
+						code_challenge16()
+						continue
+						
+					if choice == "17":
+						print("Return")
+						continue				
+					
 	
-	print("ayoko na - EXIT")
-	ask = input("\nWhich program would you like to run, select options from above: ")
-	if ask == "1":
-	       print("ACTIVITY 1\n")
-	       activity1()
-	       continue
-	       
-	if ask == "2":
-	       print("ACTIVITY 2\n")
-	       activity2()
-	       continue
-	       
-	if ask == "3":
-	       print("ACTIVITY 3\n")
-	       activity3()
-	       continue
-	       
-	if ask == "4":
-	       print("ACTIVITY 4\n")
-	       activity4()
-	       continue
-	
-	if ask == "5":
-	       print("ACTIVITY 5\n")
-	       activity5()
-	       continue
-	       
-	if ask == "6":
-	       print("ACTIVITY 6\n")
-	       activity6()
-	       continue
-	
-	if ask == "7":
-	       print("ACTIVITY 7\n")
-	       activity7()
-	       continue
-	
-	if ask == "8":
-	       print("ACTIVITY 8\n")
-	       activity8()
-	       continue
-	       
-	if ask == "9":
-	       print("ACTIVITY 9\n")
-	       activity9()
-	       continue
-	       
-	if ask == "10":
-	       print("ACTIVITY 10\n")
-	       activity10()
-	       continue
-	       
-	if ask == "11":
-	       print("ACTIVITY 11\n")
-	       activity11()
-	       continue
-	       
-	if ask == "12":
-	       print("ACTIVITY 12\n")
-	       activity12()
-	       continue
-	       
-	if ask == "13":
-	       print("ACTIVITY 13\n")
-	       activity13()
-	       continue
-	
-	if ask == "14":
-	       print("ACTIVITY 14\n")
-	       activity14()
-	       continue
-	
-	if ask == "15":
-	       print("ACTIVITY 15\n")
-	       activity15()
-	       continue
-	
-	if ask == "16":
-	       print("ACTIVITY 16\n")
-	       activity16()
-	       continue
-	       
-	if ask == "17":
-	       print("ACTIVITY 17\n")
-	       activity17()
-	       continue
-	       
-	if ask == "18":
-	       print("ACTIVITY 18\n")
-	       activity18()
-	       continue
-	       
-	if ask == "19":
-	       print("ACTIVITY 19\n")
-	       activity19()
-	       continue
-	       
-	if ask == "20":
-	       print("ACTIVITY 20\n")
-	       activity20()
-	       continue
-        
-	if ask == "code_challenge1":
-	       print("Code_Challenge1")
-	       code_challenge1()
-	       continue
-	       
-	if ask == "code_challenge2":
-	       print("Code_Challenge2")
-	       code_challenge2
-	       continue
-	       
-	if ask == "code_challenge3":
-	       print("Code_Challenge3")
-	       code_challenge3()
-	       continue
-	       
-	if ask == "code_challenge4":
-	       print("Code_Challenge4")
-	       code_challenge4()
-	       continue
-	       
-	if ask == "code_challenge5":
-	       print("Code_Challenge5")
-	       code_challenge5()
-	       continue
-	       
-	if ask == "code_challenge6":
-	       print("Code_Challenge6")
-	       code_challenge6()
-	       continue
-	       
-	if ask == "code_challenge7":
-	       print("Code_Challenge7")
-	       code_challenge7()
-	       continue
-	       
-	if ask == "code_challenge8":
-	       print("Code_Challenge8 ")
-	       code_challenge8()
-	       continue
-	       
-	if ask == "code_challenge9":
-	       print("Code_Challenge9")
-	       code_challenge9()
-	       continue
-	       
-	if ask == "code_challenge10":
-	       print("Code_Challenge10")
-	       code_challenge10()
-	       continue
-	       
-	if ask == "code_challenge11":
-	       print("Code_Challenge11")
-	       code_challenge11()
-	       continue
-	       
-	if ask == "code_challenge12":
-	       print("Code_Challenge12")
-	       code_challenge12()
-	       continue
-	       
-	if ask == "code_challenge13":
-	       print("Code_Challenge13")
-	       code_challenge13()
-	       continue
-	       
-	if ask == "code_challenge14":
-	       print("Code_Challenge14")
-	       code_challenge14()
-	       continue
-	       
-	if ask == "code_challenge15":
-	       print("Code_Challenge15")
-	       code_challenge15()
-	       continue
-	       
-	if ask == "code_challenge16":
-	       print("Code_Challenge16")
-	       code_challenge16()
-	       continue
-	       
-	if ask.lower() == "ayoko na":
-	       print("Program terminated")
-	       break
-	       
-	else:
-	       print("Invalid Choice, Please try again. ")
-	       continue
+	elif ask.lower() == "no":
+		  	print("program / loop terminated")
+		  	break
